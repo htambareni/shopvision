@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shop_vision/config/route_generator.dart';
 import 'package:shop_vision/view/grocery_list.dart';
 
 void main() {
@@ -10,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Shop Vision',
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -26,7 +27,10 @@ class MyApp extends StatelessWidget {
         // the app on. For desktop platforms, the controls will be smaller and
         // closer together (more dense) than on mobile platforms.
         visualDensity: VisualDensity.adaptivePlatformDensity,
+        fontFamily: 'Montserrat',
       ),
+      debugShowCheckedModeBanner: false,
+      onGenerateRoute: RouteGenerator.generateRoute,
       home: GroceryStoreList(),
     );
   }

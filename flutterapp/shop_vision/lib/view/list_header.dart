@@ -16,7 +16,7 @@ class ListHeader extends StatelessWidget {
         ),
         background: Image(
           image: NetworkImage(
-              "https://www.freevector.com/uploads/vector/preview/29714/Grocery-Store.jpg"),
+              "https://image.freepik.com/free-vector/fashion-store_23-2147563514.jpg"),
           fit: BoxFit.cover,
         ),
       ),
